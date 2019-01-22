@@ -55,7 +55,7 @@
  * Define the default window system.  This should be one that is compiled
  * into your system (see defines above).  Known window systems are:
  *
- *      tty, X11, mac, amii, BeOS, Qt, Gem, Gnome
+ *      tty, X11, mac, amii, BeOS, Qt, Gem, Gnome, JSON
  */
 
 /* MAC also means MAC windows */

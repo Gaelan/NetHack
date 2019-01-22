@@ -50,6 +50,8 @@ FNR == 1	{ output_dep()			#finish previous file
 		      incl = "../win/Qt4/" incl
 		    else if (incl ~ /^gn/)	# gnomehack special case
 		      incl = "../win/gnome/" incl
+		    else if (incl ~ /^json/)	# gnomehack special case
+		      incl = "../win/json/" incl
 		    else
 		      incl = "../include/" incl
 		  }

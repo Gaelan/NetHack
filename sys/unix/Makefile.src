@@ -242,6 +242,11 @@ WINQT4OBJ = qt4bind.o qt4click.o qt4clust.o qt4delay.o qt4glyph.o qt4icon.o \
 	qt4plsel.o qt4rip.o qt4set.o qt4stat.o qt4str.o qt4streq.o qt4svsel.o \
 	qt4win.o qt4xcmd.o qt4yndlg.o tile.o
 #
+# Files for a JSON port
+#
+WINJSONSRC = ../win/json/json_io.c ../win/json/json_player_selection.c ../win/json/winjson.c
+WINJSONOBJ = json_io.o json_player_selection.o winjson.o
+#
 # Files for a Gnome port
 #
 WINGNOMESRC = ../win/gnome/gnaskstr.c ../win/gnome/gnbind.c \
@@ -373,7 +378,7 @@ RANDOBJ =
 
 
 # used by `make depend' to reconstruct this Makefile; you shouldn't need this
-AWK	= nawk
+AWK	= awk
 
 # when using 'makedefs -v', also force dat/gitinfo.txt to be up to date;
 # changing this to 0 will change the behavior to only make that file if
@@ -467,7 +472,7 @@ SYSCXXSRC = ../sys/share/cppregex.cpp
 GENCSRC = vis_tab.c	#tile.c
 
 # all windowing-system-dependent .c (for dependencies and such)
-WINCSRC = $(WINTTYSRC) $(WINCURSESSRC) $(WINX11SRC) $(WINGNOMESRC) $(WINGEMSRC)
+WINCSRC = $(WINTTYSRC) $(WINCURSESSRC) $(WINX11SRC) $(WINGNOMESRC) $(WINGEMSRC) $(WINJSONSRC)
 # all windowing-system-dependent .cpp (for dependencies and such)
 WINCXXSRC = $(WINQTSRC) $(WINQT4SRC) $(WINBESRC)
 

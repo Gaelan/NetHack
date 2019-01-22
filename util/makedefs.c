@@ -1740,6 +1740,9 @@ static struct win_info window_opts[] = {
 #ifdef BEOS_GRAPHICS
     { "BeOS", "BeOS InterfaceKit" },
 #endif
+#ifdef JSON_GRAPHICS
+    { "JSON", "JSON for networked graphics" },
+#endif
     { 0, 0 }
 };
 

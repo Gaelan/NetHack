@@ -429,6 +429,7 @@ curses_choose_character()
     char choice[QBUFSZ];
     char tmpchoice[QBUFSZ];
 
+
     prompt = build_plselection_prompt(pbuf, QBUFSZ, flags.initrole,
                                       flags.initrace, flags.initgend,
                                       flags.initalign);
